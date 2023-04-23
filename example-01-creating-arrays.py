@@ -41,7 +41,7 @@ np_array = np.arange(0, 20, 2)
 np_array = np.linspace(0, 1, 5)
 # array([0.  , 0.25, 0.5 , 0.75, 1.  ])
 
-# Create uniformly distributed array with values between 0 and 1
+# Create uniformly distributed array with values between 0 (included) and 1 (excluded)
 np_array = np.random.random((3, 3))
 # array([[0.89659217, 0.98819377, 0.16615932],
 #        [0.60721296, 0.96274164, 0.17307982],
