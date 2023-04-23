@@ -47,7 +47,7 @@ np_array = np.random.random((3, 3))
 #        [0.60721296, 0.96274164, 0.17307982],
 #        [0.23210178, 0.22946746, 0.81018554]])
 
-# Create normaly distributed array with mean = 0, standard deviation = 1
+# Create normaly distributed array with mean = 0 and standard deviation = 1
 np_array = np.random.normal(0, 1, (3, 3))
 # array([[ 1.09252596, -0.86352121,  0.76450169],
 #        [ 0.62465109,  0.45006704, -1.35394571],
