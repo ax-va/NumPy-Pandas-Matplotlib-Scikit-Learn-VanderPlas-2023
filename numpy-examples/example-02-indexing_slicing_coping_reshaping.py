@@ -3,7 +3,7 @@ import numpy as np
 # random generator
 rng = np.random.default_rng(seed=42)  # seed for reproducibility (if you exit and restart your Python interpreter)
 
-# Create:
+# Create a one-dimensional array (neither a row vector nor a column vector):
 # array([0, 7, 6, 4, 4, 8], dtype=int64)
 x1 = rng.integers(10, size=6)  # one-dimensional array
 print(x1[0])  # 0
@@ -13,7 +13,7 @@ print(x1[-2])  # 4
 x1[0] = 3.14159  # This will be truncated
 # array([3, 7, 6, 4, 4, 8], dtype=int64)
 
-# Create:
+# Create a two-dimensional array:
 # array([[0, 6, 2, 0],
 #        [5, 9, 7, 7],
 #        [7, 7, 5, 1]], dtype=int64)
@@ -31,7 +31,7 @@ x2[0, 0] = 0
 #        [5, 9, 7, 7],
 #        [7, 7, 5, 1]], dtype=int64)
 
-# Create:
+# Create a three-dimensional array:
 # array([[[8, 4, 5, 3, 1],
 #         [9, 7, 6, 4, 8],
 #         [5, 4, 4, 2, 0],
@@ -142,13 +142,13 @@ grid2[0, 0] = 42
 #        [ 9]])
 grid3 = grid.reshape(9, 1)  # column vector via reshape
 
-# A shorthand:
+# Shorthands to reshape to row and column vectors via np.newaxis:
 x = np.array([1, 2, 3])
 # Reshape to the row vector:
 # array([[1, 2, 3]])
-x[np.newaxis, :]  # row vector via newaxis
+x[np.newaxis, :]  # row vector via np.newaxis
 # Reshape to the column vector:
 # array([[1],
 #        [2],
 #        [3]])
-x[:, np.newaxis]  # column vector via newaxis
+x[:, np.newaxis]  # column vector via np.newaxis

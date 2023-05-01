@@ -1,6 +1,6 @@
 import numpy as np
 
-# Concatenate a one-dimensional array:
+# Concatenate one-dimensional arrays:
 x = np.array([1, 2, 3])
 y = np.array([3, 2, 1])
 # array([1, 2, 3, 3, 2, 1])
@@ -9,7 +9,7 @@ z = np.array([99, 99, 99])
 # array([ 1,  2,  3,  3,  2,  1, 99, 99, 99])
 np.concatenate([x, y, z])
 
-# Concatenate a two-dimensional array:
+# Concatenate two-dimensional arrays:
 grid = np.array([[1, 2, 3],
                  [4, 5, 6]])
 # array([[1, 2, 3],
@@ -21,7 +21,7 @@ np.concatenate([grid, grid])  # concatenate along the first axis
 #        [4, 5, 6, 4, 5, 6]])
 np.concatenate([grid, grid], axis=1)  # concatenate along the second axis (zero-indexed)
 
-# np.vstack and np.hstack:
+# Stack in axis 0 by np.vstack and in axis 1 by np.hstack:
 # array([[1, 2, 3],
 #        [1, 2, 3],
 #        [4, 5, 6]])
@@ -30,9 +30,9 @@ np.vstack([x, grid])  # vertically stack the arrays
 #        [2, 4, 5, 6]])
 np.hstack([x[:2][:, np.newaxis], grid])
 
-# Similarly, np.dstack for axis=2
+# Similarly, np.dstack for axis=2 (the third axis)
 
-# Split by split points:
+# Split a one-dimensional array by split points:
 x = [1, 2, 3, 99, 99, 3, 2, 1]
 x1, x2, x3 = np.split(x, [3, 5])  # split points
 # for x1:
@@ -42,7 +42,7 @@ x1, x2, x3 = np.split(x, [3, 5])  # split points
 # for x3:
 # array([3, 2, 1])
 
-# np.hsplit and np.vsplit:
+# Split by np.hsplit and np.vsplit:
 # array([[ 0,  1,  2,  3],
 #        [ 4,  5,  6,  7],
 #        [ 8,  9, 10, 11],
@@ -67,4 +67,4 @@ left, right = np.hsplit(grid, [2])
 #        [10, 11],
 #        [14, 15]])
 
-# Similarly np.dsplit for axis=2
+# Similarly np.dsplit for axis=2 (the third axis)
