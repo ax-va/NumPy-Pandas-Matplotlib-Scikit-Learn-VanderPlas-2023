@@ -26,6 +26,12 @@ np_array = np.array([[1, 2, 3],
 # array([0, 0, 0, 0, 0, 0, 0, 0, 0, 0])
 np_array = np.zeros(10, dtype=int)
 
+# array([0, 0, 0, 0, 0, 0, 0, 0, 0, 0], dtype=int16)
+np_array = np.zeros(10, dtype='int16')
+
+# array([0, 0, 0, 0, 0, 0, 0, 0, 0, 0], dtype=int16)
+np_array = np.zeros(10, dtype=np.int16)
+
 # array([[1., 1., 1.],
 #        [1., 1., 1.]])
 np_array = np.ones((2, 3), dtype=float)
@@ -72,4 +78,4 @@ np_array = np.empty(3)
 # array([[7.32510748e-312, 3.16202013e-322, 0.00000000e+000, 0.00000000e+000],
 #        [1.06099790e-312, 1.04015305e-042, 1.86255286e+160, 2.67784644e+184],
 #        [1.60529780e-051, 3.14254102e+179, 1.04855743e-042, 1.03012321e-071]])
-np_array = np.empty((3,4))
+np_array = np.empty((3, 4))
