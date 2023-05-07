@@ -52,3 +52,20 @@ matrix.min(axis=0)  #
 # max
 print(matrix.max())  # 7
 
+# Create:
+# array([[nan,  1.,  6.,  7.],
+#        [ 2.,  7.,  4.,  3.],
+#        [ 6.,  2.,  3.,  7.]])
+matrix = np.array([[np.nan, 1, 6, 7],
+                   [2, 7, 4, 3],
+                   [6, 2, 3, 7]])
+print(np.max(matrix))  # nan
+# NaN-safe version
+print(np.nanmax(matrix))  # 7
+
+# Find the index of minimum element
+print(np.argmin(matrix))  # 0
+# NaN-safe version
+print(np.nanargmin(matrix))  # 1
+print(np.nanargmax(matrix))  # 3
+

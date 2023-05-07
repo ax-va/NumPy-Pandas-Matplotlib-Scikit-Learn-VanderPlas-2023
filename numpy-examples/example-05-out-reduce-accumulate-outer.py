@@ -16,20 +16,25 @@ np.power(2, x, out=y[::2])  # instead of y[::2] = 2 ** x to use memory efficient
 
 # array([1, 2, 3, 4, 5])
 x = np.arange(1, 6)
+
+# Reduce to:
 # 15
 np.add.reduce(x)
 # 120
 np.multiply.reduce(x)
+
+# array([1, 3, 5])
+x = np.arange(1, 6, 2)
+# Reduce to:
+# 1 / 3 / 5:
+# 0.06666666666666667
+np.div.reduce(x)
+
+# Accumulate to:
 # array([ 1,  3,  6, 10, 15])
 np.add.accumulate(x)
 # array([  1,   2,   6,  24, 120])
 np.multiply.accumulate(x)
-
-# array([1, 3, 5])
-x = np.arange(1, 6, 2)
-# 1 / 3 / 5:
-# 0.06666666666666667
-np.div.reduce(x)
 
 # array([1, 2, 3, 4, 5])
 x = np.arange(1, 6)

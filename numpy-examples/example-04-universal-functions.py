@@ -49,6 +49,7 @@ abs(x)
 rng = np.random.default_rng(seed=42)
 big_array = rng.random(1_000_000)
 small_array = rng.random(1_000)
+# Compare abs and np.abs
 # In IPython:
 # %timeit abs(big_array)
 # 4.48 ms ± 520 µs per loop (mean ± std. dev. of 7 runs, 100 loops each)
@@ -144,4 +145,3 @@ special.erfc(x)
 special.erfinv(x)
 # array([0. , 0.3, 0.7, 1. ])
 special.erfinv(special.erf(x))
-

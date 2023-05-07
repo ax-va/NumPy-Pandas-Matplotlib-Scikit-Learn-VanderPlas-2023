@@ -1,17 +1,26 @@
 # NumPy-VanderPlas-2023
 
 ## IPython magic commands:
-%time
-%timeit
+%timeit my_func(1, 2)
+
+## Install line_profiler:
+pip install line_profiler
 
 ## line_profiler in IPython:
 %load_ext line_profiler
-%lprun -f sum_of_lists sum_of_lists(5000)
+%lprun -f my_func my_func(1, 2)
+
+## Install memory_profiler:
+pip install memory_profiler
 
 ## memory_profiler in IPython:
 %load_ext memory_profiler
-%memit sum_of_lists(1000000)
-%mprun -f sum_of_lists sum_of_lists(1000000)
+%memit my_func(1, 2)
+from my_module import my_func
+%mprun -f my_func my_func(1, 2)
 
-## Documentation:
+## Matplotlib in IPython:
+%matplotlib inline
+
+## NumPy Documentation:
 https://numpy.org/
