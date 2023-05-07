@@ -1,7 +1,9 @@
 # NumPy-VanderPlas-2023
 
 ## IPython useful "magic" commands:
+```ipython
 %timeit my_func(1, 2)
+```
 
 ## Install line_profiler:
 pip install line_profiler
