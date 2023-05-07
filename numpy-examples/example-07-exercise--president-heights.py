@@ -16,7 +16,7 @@ print("Maximum height:", heights.max())  # Maximum height: 193
 # Compute quantiles
 print("0th percentile:", np.percentile(heights, 0))  # 0th percentile: 163.0
 print("25th percentile:", np.percentile(heights, 25))  # 25th percentile: 174.25
-# Two lines are equivalent:
+# Next two lines are equivalent:
 print("Median:", np.median(heights))  # Median: 182.0
 print("50th percentile:", np.percentile(heights, 50))  # 50th percentile: 182.0
 print("75th percentile:", np.percentile(heights, 75))  # 75th percentile: 183.0
