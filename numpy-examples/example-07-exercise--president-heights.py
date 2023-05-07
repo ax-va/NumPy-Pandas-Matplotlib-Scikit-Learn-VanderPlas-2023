@@ -27,7 +27,7 @@ plt.hist(heights)
 plt.title('Height Distribution of US Presidents')
 plt.xlabel('height (cm)')
 plt.ylabel('number')
-plt.savefig('../figures/president-heights.svg')
+plt.savefig('../figures/president_heights.svg')
 plt.close()
 
 
