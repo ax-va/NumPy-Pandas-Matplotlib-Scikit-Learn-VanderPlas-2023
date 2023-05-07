@@ -46,6 +46,19 @@ x = np.array([3 - 4j, 4 - 3j, 2 + 0j, 0 + 1j])
 # array([5., 5., 2., 1.])
 abs(x)
 
+rng = np.random.default_rng(seed=42)
+big_array = rng.random(1_000_000)
+small_array = rng.random(1_000)
+# In IPython:
+# %timeit abs(big_array)
+# 4.48 ms ± 520 µs per loop (mean ± std. dev. of 7 runs, 100 loops each)
+# %timeit np.abs(big_array)
+# 3.27 ms ± 617 µs per loop (mean ± std. dev. of 7 runs, 100 loops each)
+# %timeit abs(small_array)
+# 946 ns ± 13.3 ns per loop (mean ± std. dev. of 7 runs, 1,000,000 loops each)
+# %timeit np.abs(small_array)
+# 933 ns ± 9.16 ns per loop (mean ± std. dev. of 7 runs, 1,000,000 loops each)
+
 # Create:
 # array([0.        , 1.57079633, 3.14159265])
 theta = np.linspace(0, np.pi, 3)
