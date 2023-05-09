@@ -1,6 +1,6 @@
 # NumPy-VanderPlas-2023
 
-## timeit command in IPython:
+## %timeit command in IPython:
 ```ipython
 from my_module import my_func
 %timeit my_func(1, 2)
