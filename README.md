@@ -1,6 +1,6 @@
 # NumPy-VanderPlas-2023
 
-## IPython useful "magic" commands:
+## Useful commands in IPython:
 ```ipython
 from my_module import my_func
 %timeit my_func(1, 2)
