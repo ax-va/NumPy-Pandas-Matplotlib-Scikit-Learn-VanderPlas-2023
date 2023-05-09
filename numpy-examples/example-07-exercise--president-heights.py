@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 
-data = pd.read_csv('../data/president_heights.csv')
+data = pd.read_csv('../data/president-heights.csv')
 heights = np.array(data['height(cm)'])
 print(heights)
 # [189 170 189 163 183 171 185 168 173 183 173 173 175 178 183 193 178 173
@@ -27,7 +27,7 @@ plt.hist(heights)
 plt.title('Height Distribution of US Presidents')
 plt.xlabel('height (cm)')
 plt.ylabel('number')
-plt.savefig('../figures/president_heights.svg')
+plt.savefig('../figures/president-heights.svg')
 plt.close()
 
 
