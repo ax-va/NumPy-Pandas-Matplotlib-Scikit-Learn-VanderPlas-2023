@@ -7,7 +7,6 @@ x = np.array([1, 2, 3, 4, 5])
 x < 3  # # array([ True, True, False, False, False])
 np.less(x, 3)  # array([ True,  True, False, False, False])
 
-
 x > 3  # array([False, False, False, True, True])
 
 x <= 3  # array([ True, True, True, False, False])
