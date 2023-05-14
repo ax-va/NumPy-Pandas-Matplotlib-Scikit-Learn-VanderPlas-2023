@@ -3,7 +3,6 @@ import numpy as np
 x = np.array([1, 2, 3, 4, 5])
 
 # Create Boolean arrays:
-
 x < 3  # # array([ True, True, False, False, False])
 np.less(x, 3)  # array([ True,  True, False, False, False])
 
