@@ -3,30 +3,25 @@ import numpy as np
 x = np.array([1, 2, 3, 4, 5])
 
 # Create Boolean arrays:
-# array([ True, True, False, False, False])
-x < 3
 
-# array([False, False, False, True, True])
-x > 3
+x < 3  # # array([ True, True, False, False, False])
+np.less(x, 3)  # array([ True,  True, False, False, False])
 
-# array([ True, True, True, False, False])
-x <= 3
 
-# array([False, False, True, True, True])
-x >= 3
+x > 3  # array([False, False, False, True, True])
 
-# array([ True, True, False, True, True])
-x != 3
+x <= 3  # array([ True, True, True, False, False])
 
-# array([False, False, True, False, False])
-x == 3
+x >= 3  # array([False, False, True, True, True])
+
+x != 3  # array([ True, True, False, True, True])
+
+x == 3  # array([False, False, True, False, False])
 
 # element-wise comparison of two arrays:
-# array([False, True, False, False, False])
-(2 * x) == (x ** 2)
+(2 * x) == (x ** 2)  # array([False, True, False, False, False])
 # equivalent:
-# array([False, True, False, False, False])
-np.equal(2 * x, x ** 2)
+np.equal(2 * x, x ** 2)  # array([False, True, False, False, False])
 
 rng = np.random.default_rng(seed=42)
 # Create:
