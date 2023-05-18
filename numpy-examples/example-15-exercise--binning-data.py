@@ -41,4 +41,4 @@ x = rng.normal(size=1_000_000)
 # %timeit counts, edges = np.histogram(x, bins)
 # 58 ms ± 25.6 µs per loop (mean ± std. dev. of 7 runs, 10 loops each)
 # %timeit np.add.at(counts, np.searchsorted(bins, x), 1)
-# Problem
+# Problems appears
