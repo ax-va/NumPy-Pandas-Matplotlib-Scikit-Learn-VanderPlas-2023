@@ -2,30 +2,30 @@ import numpy as np
 
 a = np.array([0, 1, 2])
 b = np.array([5, 5, 5])
-a + b  #  array([5, 6, 7])
+a + b  # array([5, 6, 7])
 a + 5  # array([5, 6, 7])
 
+M = np.ones((3, 3))
 # array([[1., 1., 1.],
 #        [1., 1., 1.],
 #        [1., 1., 1.]])
-M = np.ones((3, 3))
 
+M + a
 # array([[1., 2., 3.],
 #        [1., 2., 3.],
 #        [1., 2., 3.]])
-M + a
 
-# array([0, 1, 2])
 a = np.arange(3)
+# array([0, 1, 2])
+b = np.arange(3)[:, np.newaxis]
 # array([[0],
 #        [1],
 #        [2]])
-b = np.arange(3)[:, np.newaxis]
 
+a + b
 # array([[0, 1, 2],
 #        [1, 2, 3],
 #        [2, 3, 4]])
-a + b
 
 # Broadcasting rules:
 #
@@ -39,16 +39,17 @@ a + b
 
 # Example 1
 
+M = np.ones((2, 3))
 # array([[1., 1., 1.],
 #        [1., 1., 1.]])
-M = np.ones((2, 3))
 
-# array([0, 1, 2])
 a = np.arange(3)
+# array([0, 1, 2])
 
+M + a
 # array([[1., 2., 3.],
 #        [1., 2., 3.]])
-M + a
+
 # Rules:
 # M.shape is (2, 3)
 # a.shape is (3,)
@@ -61,17 +62,17 @@ M + a
 
 # Example 2
 
+a = np.arange(3).reshape((3, 1))
 # array([[0],
 #        [1],
 #        [2]])
-a = np.arange(3).reshape((3, 1))
-# array([0, 1, 2])
 b = np.arange(3)
+# array([0, 1, 2])
 
+a + b
 # array([[0, 1, 2],
 #        [1, 2, 3],
 #        [2, 3, 4]])
-a + b
 
 # Rules:
 # a.shape is (3, 1)
@@ -85,15 +86,15 @@ a + b
 
 # Example 3
 
+M = np.ones((3, 2))
 # array([[1., 1.],
 #        [1., 1.],
 #        [1., 1.]])
-M = np.ones((3, 2))
-# array([0, 1, 2])
 a = np.arange(3)
+# array([0, 1, 2])
 
-# ValueError: operands could not be broadcast together with shapes (3,2) (3,)
 # M + a
+# ValueError: operands could not be broadcast together with shapes (3,2) (3,)
 
 # Rules:
 # M.shape is (3, 2)
@@ -108,17 +109,17 @@ a = np.arange(3)
 # Two arrays are incompatible
 
 # Possible solution is to reshape the array to
+a[:, np.newaxis]
 # array([[0],
 #        [1],
 #        [2]])
-a[:, np.newaxis]
+M + a[:, np.newaxis]
 # array([[1., 1.],
 #        [2., 2.],
 #        [3., 3.]])
-M + a[:, np.newaxis]
 
 # Broadcasting for other binary ufuncs, e.g. log(exp(a) + exp(b))
+np.logaddexp(M, a[:, np.newaxis])
 # array([[1.31326169, 1.31326169],
 #        [1.69314718, 1.69314718],
 #        [2.31326169, 2.31326169]])
-np.logaddexp(M, a[:, np.newaxis])

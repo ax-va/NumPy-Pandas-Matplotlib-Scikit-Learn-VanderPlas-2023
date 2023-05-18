@@ -30,35 +30,35 @@ print(big_array.max(), big_array.min(), big_array.sum())
 # 0.9999997172035572 1.2500323287589765e-07 500026.47617408895
 
 # Create a matrix:
+matrix = rng.integers(0, 10, (3, 4))
 # array([[4, 1, 6, 7],
 #        [2, 7, 4, 3],
-#        [6, 2, 3, 7]], dtype=int64)
-matrix = rng.integers(0, 10, (3, 4))
+#        [6, 2, 3, 7]])
 
 # Sum out all entries
 print(matrix.sum())  # 52
 # Sum out all rows:
-# array([12, 10, 13, 17], dtype=int64)
 matrix.sum(axis=0)
+# array([12, 10, 13, 17])
 # Sum out all columns:
-# array([18, 16, 18], dtype=int64)
 matrix.sum(axis=1)
+# array([18, 16, 18])
 
 # min
 print(matrix.min())  # 1
 # min of rows:
-# array([2, 1, 3, 3], dtype=int64)
-matrix.min(axis=0)  #
+matrix.min(axis=0)
+# array([2, 1, 3, 3])
 # max
 print(matrix.max())  # 7
 
 # Create:
-# array([[nan,  1.,  6.,  7.],
-#        [ 2.,  7.,  4.,  3.],
-#        [ 6.,  2.,  3.,  7.]])
 matrix = np.array([[np.nan, 1, 6, 7],
                    [2, 7, 4, 3],
                    [6, 2, 3, 7]])
+# array([[nan,  1.,  6.,  7.],
+#        [ 2.,  7.,  4.,  3.],
+#        [ 6.,  2.,  3.,  7.]])
 print(np.max(matrix))  # nan
 # NaN-safe version
 print(np.nanmax(matrix))  # 7

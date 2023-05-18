@@ -23,16 +23,16 @@ np.equal(2 * x, x ** 2)  # array([False, True, False, False, False])
 
 rng = np.random.default_rng(seed=42)
 # Create:
+x = rng.integers(10, size=(3, 4))
 # array([[0, 7, 6, 4],
 #        [4, 8, 0, 6],
 #        [2, 0, 5, 9]])
-x = rng.integers(10, size=(3, 4))
 
 # Get Boolean values of comparison with 5:
+x >= 5
 # array([[False,  True,  True, False],
 #        [False,  True, False,  True],
 #        [False, False,  True,  True]])
-x >= 5
 
 # Count the number of True entries in a Boolean array:
 np.count_nonzero(x >= 5)  # 6

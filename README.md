@@ -7,6 +7,28 @@ from my_module import my_func
 # 45.7 µs ± 1.67 µs per loop (mean ± std. dev. of 7 runs, 10,000 loops each)
 ```
 
+## Get source code in IPython:
+```ipython
+from my_module import my_func
+my_func??
+# Signature: my_func(x, y)
+# Docstring: <no docstring>
+# Source:   
+# """
+# It is my module
+# """
+#
+#
+# def my_func(x, y):
+#     """
+#     It is my function
+#     """
+#     for i in range(1000):
+#         x += 1
+#         y += 1
+#     return x + y
+```
+
 ## Install line_profiler:
 ```
 pip install line_profiler

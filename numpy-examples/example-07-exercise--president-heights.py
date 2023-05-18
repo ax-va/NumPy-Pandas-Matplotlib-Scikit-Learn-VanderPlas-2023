@@ -29,6 +29,3 @@ plt.xlabel('height (cm)')
 plt.ylabel('number')
 plt.savefig('../figures/president-heights.svg')
 plt.close()
-
-
-
