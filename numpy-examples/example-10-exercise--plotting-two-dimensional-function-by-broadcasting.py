@@ -12,5 +12,5 @@ z = np.sin(x) ** 10 + np.cos(10 + y * x) * np.cos(x)
 
 plt.imshow(z, origin='lower', extent=[0, 5, 0, 5])
 plt.colorbar()
-plt.savefig('../figures/plotting-two-dimensional-function-by-broadcasting.svg')
+plt.savefig('../numpy-examples-figures/plotting-two-dimensional-function-by-broadcasting.svg')
 plt.close()

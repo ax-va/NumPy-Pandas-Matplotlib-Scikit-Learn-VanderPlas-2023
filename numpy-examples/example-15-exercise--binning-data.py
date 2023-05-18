@@ -22,14 +22,14 @@ np.add.at(counts, i, 1)
 
 # Plot the results
 plt.plot(bins, counts, drawstyle='steps')
-plt.savefig('../figures/binning-data-1.svg')
+plt.savefig('../numpy-examples-figures/binning-data-1.svg')
 plt.close()
 
 # But there is another method.
 # Use the hist method.
 # It uses np.histogram.
 plt.hist(x, bins, histtype='step')
-plt.savefig('../figures/binning-data-2.svg')
+plt.savefig('../numpy-examples-figures/binning-data-2.svg')
 plt.close()
 
 # %timeit counts, edges = np.histogram(x, bins)
