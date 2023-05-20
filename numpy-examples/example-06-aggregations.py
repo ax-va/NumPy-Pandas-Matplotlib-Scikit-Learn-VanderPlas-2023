@@ -68,4 +68,3 @@ print(np.argmin(matrix))  # 0
 # NaN-safe version
 print(np.nanargmin(matrix))  # 1
 print(np.nanargmax(matrix))  # 3
-
