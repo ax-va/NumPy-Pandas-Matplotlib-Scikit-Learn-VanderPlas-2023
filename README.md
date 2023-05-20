@@ -92,7 +92,7 @@ peak memory: 74.48 MiB, increment: 0.00 MiB
 %matplotlib inline
 ```
 
-## NumPy Documentation:
+## NumPy website:
 https://numpy.org/
 
 ## Pandas website:
