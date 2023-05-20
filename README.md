@@ -7,10 +7,10 @@ from my_module import my_func
 # 45.7 µs ± 1.67 µs per loop (mean ± std. dev. of 7 runs, 10,000 loops each)
 ```
 
-## Get attributes and methods in IPython:
+## Get attributes, methods, and functions in IPython:
 ```ipython
-import numpy as np
-np.<TAB>
+import my_module
+my_module.<TAB>
 ```
 
 ## Get source code in IPython:
