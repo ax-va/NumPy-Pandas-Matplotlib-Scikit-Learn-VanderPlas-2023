@@ -1,32 +1,43 @@
 # NumPy-VanderPlas-2023
 
-## %timeit command in IPython:
+## Use %timeit command in IPython:
 ```ipython
 from my_module import my_func
 %timeit my_func(1, 2)
 # 45.7 µs ± 1.67 µs per loop (mean ± std. dev. of 7 runs, 10,000 loops each)
 ```
 
+## Get attributes and methods in IPython:
+```ipython
+import numpy as np
+np.<TAB>
+```
+
 ## Get source code in IPython:
 ```ipython
 from my_module import my_func
 my_func??
-# Signature: my_func(x, y)
-# Docstring: <no docstring>
-# Source:   
-# """
-# It is my module
-# """
-#
-#
-# def my_func(x, y):
-#     """
-#     It is my function
-#     """
-#     for i in range(1000):
-#         x += 1
-#         y += 1
-#     return x + y
+#Signature: my_func(x, y)
+#Source:   
+#def my_func(x, y):
+#    """
+#    It is my function
+#    """
+#    for i in range(1000):
+#        x += 1
+#        y += 1
+#    return x + y
+#File:      ~/PycharmProjects/NumPy-Pandas-Matplotlib-Scikit-learn-VanderPlas-2023/my_module.py
+#Type:      function
+```
+
+## Get description in IPython:
+```ipython
+my_func?
+#Signature: my_func(x, y)
+#Docstring: It is my function
+#File:      ~/PycharmProjects/NumPy-Pandas-Matplotlib-Scikit-learn-VanderPlas-2023/my_module.py
+#Type:      function
 ```
 
 ## Install line_profiler:
@@ -34,7 +45,7 @@ my_func??
 pip install line_profiler
 ```
 
-## line_profiler in IPython:
+## Use line_profiler in IPython:
 ```ipython
 from my_module import my_func
 %load_ext line_profiler
@@ -56,7 +67,7 @@ from my_module import my_func
 pip install memory_profiler
 ```
 
-## memory_profiler in IPython:
+## Use memory_profiler in IPython:
 ```ipython
 from my_module import my_func
 %load_ext memory_profiler
@@ -76,7 +87,7 @@ peak memory: 74.48 MiB, increment: 0.00 MiB
 #    13     82.1 MiB      0.0 MiB           1       return x + y
 ```
 
-## Matplotlib in IPython:
+## Use Matplotlib in IPython:
 ```ipython
 %matplotlib inline
 ```
