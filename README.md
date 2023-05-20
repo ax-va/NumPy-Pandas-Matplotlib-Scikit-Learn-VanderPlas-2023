@@ -94,3 +94,6 @@ peak memory: 74.48 MiB, increment: 0.00 MiB
 
 ## NumPy Documentation:
 https://numpy.org/
+
+# Pandas website:
+https://pandas.pydata.org/
