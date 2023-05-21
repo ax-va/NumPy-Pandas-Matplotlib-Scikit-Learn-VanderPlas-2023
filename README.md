@@ -92,6 +92,9 @@ peak memory: 74.48 MiB, increment: 0.00 MiB
 %matplotlib inline
 ```
 
+## IPython documentation:
+https://ipython.readthedocs.io/en/st
+
 ## NumPy website:
 https://numpy.org/
 
