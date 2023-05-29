@@ -28,6 +28,3 @@ ind_a.difference(ind_b)
 # Index([1, 9], dtype='int64')
 ind_a.symmetric_difference(ind_b)
 # Index([1, 2, 9, 11], dtype='int64')
-
-
-
