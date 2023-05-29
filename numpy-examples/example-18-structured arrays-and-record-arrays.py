@@ -50,6 +50,9 @@ np.dtype([('name', 'S10'), ('age', 'i4'), ('weight', 'f8')])
 np.dtype('S10, i4, f8')
 # dtype([('f0', 'S10'), ('f1', '<i4'), ('f2', '<f8')])
 
+A = np.zeros(3, dtype=[('A', 'i8'), ('B', 'f8')])
+# array([(0, 0.), (0, 0.), (0, 0.)], dtype=[('A', '<i8'), ('B', '<f8')])
+
 # more advanced compound dtypes
 
 tp = np.dtype([('ID', 'i8'), ('mat', 'f8', (3, 3))])
