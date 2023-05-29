@@ -13,7 +13,7 @@ import my_module
 my_module.<TAB>
 ```
 
-## Get source code in IPython:
+## Get the source code in IPython:
 ```ipython
 from my_module import my_func
 my_func??
@@ -31,7 +31,7 @@ my_func??
 # Type:      function
 ```
 
-## Get description in IPython:
+## Get the description in IPython:
 ```ipython
 my_func?
 # Signature: my_func(x, y)
@@ -92,7 +92,10 @@ peak memory: 74.48 MiB, increment: 0.00 MiB
 %matplotlib inline
 ```
 
-## NumPy Documentation:
+## IPython documentation:
+https://ipython.readthedocs.io/en/st
+
+## NumPy website:
 https://numpy.org/
 
 ## Pandas website:
