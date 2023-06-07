@@ -102,5 +102,5 @@ https://numpy.org/
 https://pandas.pydata.org/
 
 ## Xarray website: 
-a Pandas-like N-dimensional arrays
+Pandas-like N-dimensional arrays
 https://xarray.pydata.org/
