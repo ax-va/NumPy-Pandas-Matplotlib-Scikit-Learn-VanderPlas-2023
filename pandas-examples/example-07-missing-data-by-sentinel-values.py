@@ -212,4 +212,3 @@ df.fillna(method='ffill', axis='rows')  # each row in a column
 # 0  1.0  NaN NaN
 # 1  2.0  3.0 NaN
 # 2  2.0  4.0 NaN
-
