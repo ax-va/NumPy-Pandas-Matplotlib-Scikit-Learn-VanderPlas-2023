@@ -102,6 +102,4 @@ https://numpy.org/
 https://pandas.pydata.org/
 
 ## Xarray website: 
-Pandas-style N-dimensional arrays
-
-https://xarray.pydata.org/
+Pandas-style N-dimensional arrays https://xarray.pydata.org/
