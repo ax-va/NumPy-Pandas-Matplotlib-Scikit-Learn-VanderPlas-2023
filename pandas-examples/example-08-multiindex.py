@@ -1,4 +1,3 @@
-import numpy as np
 import pandas as pd
 
 index = [
@@ -98,3 +97,17 @@ pop_df = pd.DataFrame(
 # Texas      2010  25145561  6879014
 #            2020  29145505  7432474
 
+f_u18 = pop_df['under18'] / pop_df['total']
+# California  2010    0.249211
+#             2020    0.225050
+# New York    2010    0.222831
+#             2020    0.206994
+# Texas       2010    0.273568
+#             2020    0.255013
+# dtype: float64
+
+f_u18.unstack()
+#                 2010      2020
+# California  0.249211  0.225050
+# New York    0.222831  0.206994
+# Texas       0.273568  0.255013
