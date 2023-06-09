@@ -50,7 +50,8 @@ ser['California']
 # 2020    39538223
 # dtype: int64
 
-# slicing
+# Many of the MultiIndex slicing operations will fail if the index is not sorted.
+# The multiindex is sorted.
 ser.loc['California':'New York']
 # state       year
 # California  2010    37253956
@@ -148,3 +149,40 @@ health_data.loc[idx[:, 1], idx[:, 'HR']]
 # year visit
 # 2013 1      32.0  38.0  34.0
 # 2014 1      30.0  36.0  36.0
+
+# Many of the MultiIndex slicing operations will fail if the index is not sorted.
+# The multiindex is not sorted lexographically.
+index = pd.MultiIndex.from_product([['a', 'c', 'b'], [1, 2]])
+data = pd.Series(np.random.rand(6), index=index)
+data.index.names = ['char', 'int']
+# char  int
+# a     1      0.341185
+#       2      0.580861
+# c     1      0.357434
+#       2      0.925727
+# b     1      0.413724
+#       2      0.371127
+# dtype: float64
+
+# data['a':'b']
+# UnsortedIndexError: 'Key length (1) was greater than MultiIndex lexsort depth (0)'
+# data.loc['a':'b']
+# UnsortedIndexError: 'Key length (1) was greater than MultiIndex lexsort depth (0)'
+
+data = data.sort_index()
+# char  int
+# a     1      0.341185
+#       2      0.580861
+# b     1      0.413724
+#       2      0.371127
+# c     1      0.357434
+#       2      0.925727
+# dtype: float64
+
+data['a':'b']
+# char  int
+# a     1      0.341185
+#       2      0.580861
+# b     1      0.413724
+#       2      0.371127
+# dtype: float64
