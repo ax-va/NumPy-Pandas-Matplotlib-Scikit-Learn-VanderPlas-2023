@@ -18,7 +18,9 @@ populations = [
     29145505,
 ]
 
+# --------
 # Bad way:
+# --------
 
 pop = pd.Series(populations, index=index)
 # (California, 2010)    37253956
@@ -42,7 +44,9 @@ pop[[i for i in pop.index if i[1] == 2010]]
 # (Texas, 2010)         25145561
 # dtype: int64
 
+# -----------
 # Better way:
+# # ---------
 
 index = pd.MultiIndex.from_tuples(index)
 # MultiIndex([('California', 2010),
