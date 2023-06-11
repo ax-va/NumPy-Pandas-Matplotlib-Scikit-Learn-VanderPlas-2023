@@ -13,12 +13,12 @@ np.concatenate([x, y, z])
 grid = np.array([[1, 2, 3],
                  [4, 5, 6]])
 # Concatenate two-dimensional arrays:
-np.concatenate([grid, grid])  # concatenate along the first axis
+np.concatenate([grid, grid])  # concatenate along the first axis (as additional rows)
 # array([[1, 2, 3],
 #        [4, 5, 6],
 #        [1, 2, 3],
 #        [4, 5, 6]])
-np.concatenate([grid, grid], axis=1)  # concatenate along the second axis (zero-indexed)
+np.concatenate([grid, grid], axis=1)  # concatenate along the second axis (zero-indexed) (as additional columns)
 # array([[1, 2, 3, 1, 2, 3],
 #        [4, 5, 6, 4, 5, 6]])
 
