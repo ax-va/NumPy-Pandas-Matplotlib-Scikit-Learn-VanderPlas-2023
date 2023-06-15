@@ -2,10 +2,8 @@ import numpy as np
 import pandas as pd
 
 
-def make_df(cols, ind):
-    """ Make a DataFrame """
-    data = {c: [str(c) + str(i) for i in ind] for c in cols}
-    return pd.DataFrame(data, ind)
+from utils.common import make_df
+from utils.display import display
 
 
 make_df('ABC', range(3))
@@ -13,22 +11,6 @@ make_df('ABC', range(3))
 # 0  A0  B0  C0
 # 1  A1  B1  C1
 # 2  A2  B2  C2
-
-
-class display(object):
-    """ Display HTML representation of multiple objects """
-    template = """<div style="float: left; padding: 10px;">
-    <p style='font-family:"Courier New", Courier, monospace'>{0}{1}"""
-
-    def __init__(self, *args):
-        self.args = args
-
-    def _repr_html_(self):
-        return '\n'.join(self.template.format(a, eval(a)._repr_html_()) for a in self.args)
-
-    def __repr__(self):
-        return '\n\n'.join(a + '\n' + repr(eval(a)) for a in self.args)
-
 
 # Recall: concatenation in NumPy
 x = [1, 2, 3]
