@@ -90,3 +90,11 @@ A | B  # array([ True,  True,  True, False,  True,  True])
 # ValueError: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
 # (x > 0) and (x < 5)
 # ValueError: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
+
+x = np.arange(10)
+# array([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
+(x > 4) & (x < 8)
+# array([False, False, False, False, False,  True,  True,  True, False, False])
+
+# (x > 4) and (x < 8)
+# ValueError: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all()
