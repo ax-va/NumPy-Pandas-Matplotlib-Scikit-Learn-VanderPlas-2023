@@ -138,3 +138,10 @@ df2.groupby('A', group_keys=True).apply(lambda x: x / x.sum())
 # a 0  0.333333  0.4
 #   1  0.666667  0.6
 # b 2  1.000000  1.0
+
+df2.groupby('A', group_keys=True).apply(lambda x: x)
+#      A  B  C
+# A
+# a 0  a  1  4
+#   1  a  2  6
+# b 2  b  3  5
