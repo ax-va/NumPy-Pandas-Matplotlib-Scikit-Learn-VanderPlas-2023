@@ -87,13 +87,6 @@ peak memory: 74.48 MiB, increment: 0.00 MiB
 #     13     82.1 MiB      0.0 MiB           1       return x + y
 ```
 
-## Use Matplotlib in IPython:
-```ipython
-%gui
-%gui qt
-%matplotlib inline
-```
-
 ## IPython documentation:
 https://ipython.readthedocs.io/en/st
 
