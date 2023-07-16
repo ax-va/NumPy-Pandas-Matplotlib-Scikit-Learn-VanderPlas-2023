@@ -89,6 +89,8 @@ peak memory: 74.48 MiB, increment: 0.00 MiB
 
 ## Use Matplotlib in IPython:
 ```ipython
+%gui
+%gui qt
 %matplotlib inline
 ```
 
@@ -100,6 +102,9 @@ https://numpy.org/
 
 ## Pandas website:
 https://pandas.pydata.org/
+
+## Time series in Pandas:
+https://pandas.pydata.org/pandas-docs/stable/user_guide/timeseries.html
 
 ## Xarray website: 
 Pandas-style N-dimensional arrays https://xarray.pydata.org/
