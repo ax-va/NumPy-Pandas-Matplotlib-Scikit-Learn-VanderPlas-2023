@@ -1,4 +1,4 @@
-# NumPy-VanderPlas-2023
+# NumPy-Pandas-VanderPlas-2023
 
 ## Use %timeit command in IPython:
 ```ipython
