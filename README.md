@@ -99,5 +99,11 @@ https://pandas.pydata.org/
 ## Time series in Pandas:
 https://pandas.pydata.org/pandas-docs/stable/user_guide/timeseries.html
 
+## Effective Pandas
+https://leanpub.com/effective-pandas
+
+## PyVideo (NumPy, Pandas, scikit-learn, Matplotlib, Plotly, etc)
+https://pyvideo.org/search?q=pandas
+
 ## Xarray website: 
 Pandas-style N-dimensional arrays https://xarray.pydata.org/
