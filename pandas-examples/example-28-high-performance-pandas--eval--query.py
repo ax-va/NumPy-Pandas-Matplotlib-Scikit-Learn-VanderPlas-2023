@@ -29,7 +29,9 @@ mask_numexpr = numexpr.evaluate('(x > 0.5) & (y < 0.5)')
 np.all(mask == mask_numexpr)
 # True
 
-# pandas.eval for efficient operations
+# The benefit of eval and query is mainly in the saved memory.
+
+# pd.eval
 
 nrows, ncols = 100000, 100
 df1, df2, df3, df4 = (pd.DataFrame(rng.random((nrows, ncols))) for i in range(4))
@@ -216,5 +218,34 @@ df.head()
 column_mean = df.mean(1)
 result1 = df['A'] + column_mean
 result2 = df.eval('A + @column_mean')
+np.allclose(result1, result2)
+# True
+
+# Dataframe.query
+
+rng = np.random.default_rng(42)
+df = pd.DataFrame(rng.random((1000, 3)), columns=['A', 'B', 'C'])
+df.head()
+#           A         B         C
+# 0  0.773956  0.438878  0.858598
+# 1  0.697368  0.094177  0.975622
+# 2  0.761140  0.786064  0.128114
+# 3  0.450386  0.370798  0.926765
+# 4  0.643865  0.822762  0.443414
+
+# motivation
+
+result1 = df[(df.A < 0.5) & (df.B < 0.5)]
+result2 = pd.eval('df[(df.A < 0.5) & (df.B < 0.5)]')
+np.allclose(result1, result2)
+# True
+
+result3 = df.query('A < 0.5 and B < 0.5')
+np.allclose(result1, result3)
+# True
+
+C_mean = df['C'].mean()
+result1 = df[(df.A < C_mean) & (df.B < C_mean)]
+result2 = df.query('A < @C_mean and B < @C_mean')
 np.allclose(result1, result2)
 # True
