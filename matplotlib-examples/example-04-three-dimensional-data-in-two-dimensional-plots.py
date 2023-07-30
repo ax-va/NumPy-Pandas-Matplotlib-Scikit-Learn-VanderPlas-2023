@@ -38,14 +38,14 @@ X, Y = np.meshgrid(x, y)
 Z = f(X, Y)
 
 plt.contour(X, Y, Z, colors='black')
-plt.savefig('../matplotlib-examples-figures/three-dimensional-data-in-two-dimensional-plots--counter-1.svg')
+plt.savefig('../matplotlib-examples-figures/three-dimensional-data-in-two-dimensional-plots-1--counter-1.svg')
 plt.close()
 # Negative values are represented by dashed lines and positive values by solid lines.
 
 # more lines and color by the RdGy (Red–Gray) colormap
 
 plt.contour(X, Y, Z, 20, cmap='RdGy')
-plt.savefig('../matplotlib-examples-figures/three-dimensional-data-in-two-dimensional-plots--counter-2.svg')
+plt.savefig('../matplotlib-examples-figures/three-dimensional-data-in-two-dimensional-plots-2--counter-2.svg')
 plt.close()
 
 # Discover more colormaps in IPython:
@@ -53,7 +53,7 @@ plt.close()
 
 plt.contourf(X, Y, Z, 20, cmap='RdGy')
 plt.colorbar()
-plt.savefig('../matplotlib-examples-figures/three-dimensional-data-in-two-dimensional-plots--counterf.svg')
+plt.savefig('../matplotlib-examples-figures/three-dimensional-data-in-two-dimensional-plots-3--counterf.svg')
 plt.close()
 # The black regions are "peaks", while the red regions are "valleys".
 # The colors are discrete rather than continuous.
@@ -68,7 +68,7 @@ plt.imshow(
     aspect='equal'
 )
 plt.colorbar()
-plt.savefig('../matplotlib-examples-figures/three-dimensional-data-in-two-dimensional-plots--imshow.svg')
+plt.savefig('../matplotlib-examples-figures/three-dimensional-data-in-two-dimensional-plots-4--imshow.svg')
 plt.close()
 
 # Plot colors by plt.imshow and overplot with counters by plt.clabel
@@ -82,5 +82,5 @@ plt.imshow(
     alpha=0.5
 )
 plt.colorbar()
-plt.savefig('../matplotlib-examples-figures/three-dimensional-data-in-two-dimensional-plots--imshow--counter--clabel.svg')
+plt.savefig('../matplotlib-examples-figures/three-dimensional-data-in-two-dimensional-plots-5--imshow--counter--clabel.svg')
 plt.close()
