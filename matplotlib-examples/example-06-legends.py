@@ -14,11 +14,11 @@ leg = ax.legend()
 plt.savefig('../matplotlib-examples-figures/legends-1.svg')
 
 ax.legend(loc='upper left', frameon=True)
-plt.savefig('../matplotlib-examples-figures/legends-2.svg')
+plt.savefig('../matplotlib-examples-figures/legends-2--upper-left.svg')
 
 # Specify the number of columns in the legend by ncol
 ax.legend(loc='lower center', ncol=2)
-plt.savefig('../matplotlib-examples-figures/legends-3.svg')
+plt.savefig('../matplotlib-examples-figures/legends-3--lower-center.svg')
 
 # rounded box (fancybox),
 # shadow,
@@ -31,7 +31,7 @@ ax.legend(
     shadow=True,
     borderpad=5
 )
-plt.savefig('../matplotlib-examples-figures/legends-4.svg')
+plt.savefig('../matplotlib-examples-figures/legends-4--more-attributes.svg')
 plt.close()
 
 # Choose elements for the legend

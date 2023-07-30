@@ -107,3 +107,6 @@ https://pyvideo.org/search?q=pandas
 
 ## Xarray website: 
 Pandas-style N-dimensional arrays https://xarray.pydata.org/
+
+## Ten Simple Rules for Better Figures
+https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003833
