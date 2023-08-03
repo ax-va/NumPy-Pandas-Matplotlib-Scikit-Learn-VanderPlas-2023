@@ -108,5 +108,11 @@ https://pyvideo.org/search?q=pandas
 ## Xarray website: 
 Pandas-style N-dimensional arrays https://xarray.pydata.org/
 
-## Ten Simple Rules for Better Figures
+## Matplotlib website
+https://matplotlib.org/stable/index.html
+
+## "Ten Simple Rules for Better Figures" by Nicholas Rougier, Michael Droettboom, and Philip Bourne, 2014
 https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003833
+
+## Choosing Colormaps in Matplotlib
+https://matplotlib.org/stable/tutorials/colors/colormaps.html
