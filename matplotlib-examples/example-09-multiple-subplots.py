@@ -28,7 +28,7 @@ plt.close()
 for i in range(1, 7):
     # args: # number of rows, number of columns, index from the upper left to the bottom right
     plt.subplot(2, 3, i)  # one-based indexing
-    plt.text(0.5, 0.5, str((2, 3, i)), fontsize=18, ha='center')
+    plt.text(0.5, 0.5, str((2, 3, i)), fontsize=18, ha='center')  # ha = horizontal alignment
 plt.savefig('../matplotlib-examples-figures/multiple-subplots-3--subplot.svg')
 plt.close()
 
@@ -39,7 +39,7 @@ fig.subplots_adjust(hspace=0.75, wspace=0.25)
 for i in range(1, 7):
     # args: # number of rows, number of columns, index from the upper left to the bottom right
     ax = fig.add_subplot(2, 3, i)  # one-based indexing
-    ax.text(0.5, 0.5, str((2, 3, i)), fontsize=18, ha='center')
+    ax.text(0.5, 0.5, str((2, 3, i)), fontsize=18, ha='center')  # ha = horizontal alignment
 plt.savefig('../matplotlib-examples-figures/multiple-subplots-4--subplots_adjust--add_subplot.svg')
 plt.close()
 
