@@ -116,3 +116,6 @@ https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003833
 
 ## Choosing Colormaps in Matplotlib
 https://matplotlib.org/stable/tutorials/colors/colormaps.html
+
+## Annotation in Matplotlib
+https://matplotlib.org/stable/tutorials/text/annotations.html
