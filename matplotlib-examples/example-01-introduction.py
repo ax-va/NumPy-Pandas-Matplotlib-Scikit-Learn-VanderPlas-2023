@@ -32,7 +32,8 @@ plt.close()
 
 # object-oriented interface
 
-# Firstly, create a grid of plots.
+# Each Figure can contain one or more Axes instances.
+# Each axes instance has attributes xaxis and yaxis.
 # ax is an array of two Axes objects.
 fig, ax = plt.subplots(2)
 # Call plot() method on the appropriate object.
