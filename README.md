@@ -119,3 +119,6 @@ https://matplotlib.org/stable/tutorials/colors/colormaps.html
 
 ## Annotations in Matplotlib
 https://matplotlib.org/stable/tutorials/text/annotations.html
+
+## Customizing Matplotlib with style sheets and rcParams
+https://matplotlib.org/stable/tutorials/introductory/customizing.html
