@@ -122,3 +122,9 @@ https://matplotlib.org/stable/tutorials/text/annotations.html
 
 ## Customizing Matplotlib with style sheets and rcParams
 https://matplotlib.org/stable/tutorials/introductory/customizing.html
+
+## Seaborn website
+http://seaborn.pydata.org/
+
+## Seaborn example gallery
+https://seaborn.pydata.org/examples/index.html
