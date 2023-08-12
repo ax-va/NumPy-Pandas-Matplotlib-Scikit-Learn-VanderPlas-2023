@@ -3,7 +3,7 @@ import seaborn as sns
 import numpy as np
 import pandas as pd
 
-# seaborn's method to set its chart style
+# Set seaborn's chart style
 sns.set()
 
 # # # histograms, KDE, and densities
@@ -183,8 +183,3 @@ with sns.axes_style('white'):
     g.set_ylabels('Number of Planets Discovered')
 plt.savefig('../matplotlib-examples-figures/seaborn-10--catplot-3--count-2.svg')
 plt.close()
-
-
-
-
-

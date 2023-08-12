@@ -111,6 +111,9 @@ Pandas-style N-dimensional arrays https://xarray.pydata.org/
 ## Matplotlib website
 https://matplotlib.org/stable/index.html
 
+## Matplotlib gallery
+https://matplotlib.org/stable/gallery/
+
 ## "Ten Simple Rules for Better Figures" by Nicholas Rougier, Michael Droettboom, and Philip Bourne, 2014
 https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003833
 
@@ -128,3 +131,6 @@ http://seaborn.pydata.org/
 
 ## Seaborn example gallery
 https://seaborn.pydata.org/examples/index.html
+
+# PyViz: Python tools for data visualization
+https://pyviz.org/
