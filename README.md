@@ -135,5 +135,5 @@ https://seaborn.pydata.org/examples/index.html
 # PyViz: Python tools for data visualization
 https://pyviz.org/
 
-# Scikit-Learn's linear models
+# Linear models in Scikit-Learn
 https://scikit-learn.org/stable/modules/linear_model.html
