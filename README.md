@@ -117,7 +117,7 @@ https://matplotlib.org/stable/gallery/
 ## "Ten Simple Rules for Better Figures" by Nicholas Rougier, Michael Droettboom, and Philip Bourne, 2014
 https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003833
 
-## Choosing Colormaps in Matplotlib
+## Choosing colormaps in Matplotlib
 https://matplotlib.org/stable/tutorials/colors/colormaps.html
 
 ## Annotations in Matplotlib
@@ -134,3 +134,6 @@ https://seaborn.pydata.org/examples/index.html
 
 # PyViz: Python tools for data visualization
 https://pyviz.org/
+
+# Scikit-Learn's linear models
+https://scikit-learn.org/stable/modules/linear_model.html
