@@ -132,8 +132,11 @@ http://seaborn.pydata.org/
 ## Seaborn example gallery
 https://seaborn.pydata.org/examples/index.html
 
-# PyViz: Python tools for data visualization
+## PyViz: Python tools for data visualization
 https://pyviz.org/
 
-# Linear models in Scikit-Learn
+## Linear models in Scikit-Learn
 https://scikit-learn.org/stable/modules/linear_model.html
+
+## Cross-validation in Scikit-Learn
+https://scikit-learn.org/stable/modules/cross_validation.html
