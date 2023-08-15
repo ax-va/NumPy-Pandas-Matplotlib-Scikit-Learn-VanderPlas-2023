@@ -140,3 +140,6 @@ https://scikit-learn.org/stable/modules/linear_model.html
 
 ## Cross-validation in Scikit-Learn
 https://scikit-learn.org/stable/modules/cross_validation.html
+
+## Grid search in Scikit-Learn 
+https://scikit-learn.org/stable/modules/grid_search.html
