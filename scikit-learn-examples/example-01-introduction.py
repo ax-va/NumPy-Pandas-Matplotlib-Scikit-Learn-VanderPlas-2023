@@ -20,8 +20,8 @@ iris.head()
 # 3           4.6          3.1           1.5          0.2  setosa
 # 4           5.0          3.6           1.4          0.2  setosa
 
-# features matrix = X
-# the shape of the features matrix = [n_samples, n_features]
+# feature matrix = X
+# the shape of the feature matrix = [n_samples, n_features]
 # label or target array = y
 
 # the rows of the table = samples
@@ -53,7 +53,7 @@ y = 2 * x - 1 + rng.randn(50)
 model = LinearRegression(fit_intercept=True)
 # LinearRegression()
 
-# Make the features matrix of size [n_samples, n_features]
+# Make the feature matrix of size [n_samples, n_features]
 X = x[:, np.newaxis]
 X.shape
 # (50, 1)
@@ -70,7 +70,7 @@ model.intercept_
 x_fit = np.linspace(-1, 11)
 x_fit.shape
 # (50,)
-# Make the features matrix of size [n_samples, n_features]
+# Make the feature matrix of size [n_samples, n_features]
 X_fit = x_fit[:, np.newaxis]
 X_fit.shape
 # (50, 1)
