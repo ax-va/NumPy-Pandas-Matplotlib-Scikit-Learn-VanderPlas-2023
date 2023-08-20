@@ -124,7 +124,7 @@ sns.heatmap(
 plt.xlabel('true label')
 plt.ylabel('predicted label')
 plt.tight_layout()
-plt.savefig('../scikit-learn-examples-figures/naive-bayes-3--multinomial-naive-bayes-1--confusion-matrix-for-text-classification.svg')
+plt.savefig('../scikit-learn-examples-figures/naive-bayes-3--multinomial-naive-bayes--confusion-matrix-for-text-classification.svg')
 plt.close()
 
 
