@@ -25,7 +25,6 @@ x_fit = np.linspace(0, 10, 1000)
 y_fit = model.predict(x_fit[:, np.newaxis])
 
 plt.plot(x_fit, y_fit, color="r")
-
 plt.savefig('../scikit-learn-examples-figures/linear-regression-and-regularization-1--straight-line-fit.svg')
 plt.close()
 
@@ -196,6 +195,3 @@ model = make_pipeline(GaussianFeatures(30), Lasso(alpha=0.001, max_iter=2000))
 plot_basis(model, title='Lasso Regression ($L_1$ Regularization)')
 plt.savefig('../scikit-learn-examples-figures/linear-regression-and-regularization-7--gaussian-basis-coefficients-with-lasso-regression.svg')
 plt.close()
-
-
-
