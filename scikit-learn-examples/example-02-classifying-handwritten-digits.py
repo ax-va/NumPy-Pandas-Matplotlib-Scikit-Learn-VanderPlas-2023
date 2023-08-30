@@ -32,7 +32,7 @@ for i, ax in enumerate(axes.flat):
         transform=ax.transAxes,
         color='green'
 )
-plt.savefig('../scikit-learn-examples-figures/gaussian-naive-bayes-for-classifying-handwritten-digits-1--data-with-labels.svg')
+plt.savefig('../scikit-learn-examples-figures/classifying-handwritten-digits-1--data-with-labels.svg')
 plt.close()
 
 X = digits.data
@@ -70,7 +70,7 @@ plt.scatter(
 )
 plt.colorbar(label='digit label', ticks=range(10))
 plt.clim(-0.5, 9.5)
-plt.savefig('../scikit-learn-examples-figures/gaussian-naive-bayes-for-classifying-handwritten-digits-2--Isomap.svg')
+plt.savefig('../scikit-learn-examples-figures/classifying-handwritten-digits-2--Isomap.svg')
 plt.close()
 
 # # # classification on digits
@@ -85,7 +85,7 @@ accuracy_score(y_test, y_model)
 # confusion matrix
 mat = confusion_matrix(y_test, y_model)
 sns.heatmap(mat, square=True, annot=True, cbar=False, cmap='Blues')
-plt.savefig('../scikit-learn-examples-figures/gaussian-naive-bayes-for-classifying-handwritten-digits-3--confusion-matrix.svg')
+plt.savefig('../scikit-learn-examples-figures/classifying-handwritten-digits-3--confusion-matrix.svg')
 plt.close()
 
 # data with green for correct labels and red for incorrect labels
@@ -106,5 +106,5 @@ for i, ax in enumerate(axes.flat):
         transform=ax.transAxes,
         color='green' if (y_test[i] == y_model[i]) else 'red'
     )
-plt.savefig('../scikit-learn-examples-figures/gaussian-naive-bayes-for-classifying-handwritten-digits-4--testing-data-with-predicted-labels.svg')
+plt.savefig('../scikit-learn-examples-figures/classifying-handwritten-digits-4--testing-data-with-predicted-labels.svg')
 plt.close()
