@@ -211,4 +211,4 @@ plt.savefig('../scikit-learn-examples-figures/support-vector-machine-10--hard-an
 plt.close()
 
 # Use the cross-validation to choose the parameter C.
-# See example-03-model-validation.py.
+# For that, see example-03-model-validation.py.
