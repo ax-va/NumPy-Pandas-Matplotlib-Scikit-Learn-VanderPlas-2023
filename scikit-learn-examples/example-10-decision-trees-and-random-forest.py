@@ -8,6 +8,8 @@ from sklearn.ensemble import RandomForestRegressor
 
 plt.style.use('seaborn-v0_8-whitegrid')
 
+# A random forest is an ensemble of randomized decision trees.
+
 # # # decision tree
 
 # Create data for the decision tree classifier
@@ -118,3 +120,7 @@ plt.plot(x_fit, y_fit, '-r')
 plt.plot(x_fit, y_true_noiseless, '-k', alpha=0.5)
 plt.savefig('../scikit-learn-examples-figures/decision-trees-and-random-forest-6--random-forest-regression.svg')
 plt.close()
+
+# The multiple trees allow for a probabilistic classification:
+# a majority vote among estimators gives an estimate of the probability
+# (predict_proba in Scikit-Learn).
