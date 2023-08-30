@@ -146,3 +146,6 @@ https://scikit-learn.org/stable/modules/grid_search.html
 
 ## Scikit-Image
 https://scikit-image.org/
+
+## Forests of randomized trees
+https://scikit-learn.org/stable/modules/ensemble.html#forest
