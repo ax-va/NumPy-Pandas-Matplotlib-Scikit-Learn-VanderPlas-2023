@@ -209,3 +209,6 @@ for axi, C in zip(ax, [10.0, 0.1]):
     axi.set_title(f'C = {C:.1f}', size=14)
 plt.savefig('../scikit-learn-examples-figures/support-vector-machine-10--hard-and-soft-margins.svg')
 plt.close()
+
+# Use the cross-validation to choose the parameter C.
+# See example-03-model-validation.py.
