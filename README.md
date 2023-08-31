@@ -149,3 +149,6 @@ https://scikit-image.org/
 
 ## Forests of randomized trees
 https://scikit-learn.org/stable/modules/ensemble.html#forest
+
+## OpenCV website
+http://opencv.org/
