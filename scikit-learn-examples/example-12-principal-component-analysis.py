@@ -72,3 +72,10 @@ plt.scatter(X_new[:, 0], X_new[:, 1], alpha=0.25, color="r")
 plt.axis('equal')
 plt.savefig('../scikit-learn-examples-figures/principal-component-analysis-3--inverse_transform.svg')
 plt.close()
+
+# # # choosing the number of components
+# cumulative explained variance ratio
+# See the next exercise: PCA for classifying handwritten digits
+
+# # # PCA as noise filtering
+# See the next exercise: PCA for classifying handwritten digits
