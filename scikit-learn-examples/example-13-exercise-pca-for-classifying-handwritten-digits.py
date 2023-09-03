@@ -11,6 +11,7 @@ digits = load_digits()
 
 # 8 x 8–pixel images -> the data is 64-dimensional.
 
+# Apply PCA to the handwritten digits data
 pca = PCA(2)  # Project from 64 to 2 dimensions
 projected = pca.fit_transform(digits.data)
 print(digits.data.shape)
