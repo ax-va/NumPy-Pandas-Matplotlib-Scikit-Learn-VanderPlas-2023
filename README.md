@@ -152,3 +152,6 @@ https://scikit-learn.org/stable/modules/ensemble.html#forest
 
 ## OpenCV website
 http://opencv.org/
+
+## Meanifold Learning
+https://scikit-learn.org/stable/modules/manifold.html

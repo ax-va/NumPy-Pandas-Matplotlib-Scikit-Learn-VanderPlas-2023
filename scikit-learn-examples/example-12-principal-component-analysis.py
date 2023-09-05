@@ -79,3 +79,11 @@ plt.close()
 
 # # # PCA as noise filtering
 # See the next exercise: PCA for classifying handwritten digits
+
+# advantages:
+# - flexible
+# - fast
+# - easily interpretable
+#
+# disadvantages:
+# does not perform so well when there are nonlinear relationships within the data
