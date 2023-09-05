@@ -144,7 +144,7 @@ https://scikit-learn.org/stable/modules/cross_validation.html
 ## Grid search in Scikit-Learn 
 https://scikit-learn.org/stable/modules/grid_search.html
 
-## Manifold Learning in Scikit-Learn
+## Manifold learning in Scikit-Learn
 https://scikit-learn.org/stable/modules/manifold.html
 
 ## Scikit-Image
