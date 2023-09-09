@@ -20,7 +20,7 @@ X, y = make_blobs(
     cluster_std=1.0
 )
 plt.scatter(X[:, 0], X[:, 1], c=y, s=50, cmap='rainbow')
-plt.savefig('../scikit-learn-examples-figures/decision-trees-and-random-forest-1--data-for-decision-tree-classifier.svg')
+plt.savefig('../scikit-learn-examples-figures/decision-trees-and-random-forests-1--data-for-decision-tree-classifier.svg')
 plt.close()
 
 # DecisionTreeClassifier classifier
@@ -57,7 +57,7 @@ def visualize_classifier(model, X, y, ax=None, cmap='rainbow'):
 
 
 visualize_classifier(DecisionTreeClassifier(), X, y)
-plt.savefig('../scikit-learn-examples-figures/decision-trees-and-random-forest-2--decision-tree-classification.svg')
+plt.savefig('../scikit-learn-examples-figures/decision-trees-and-random-forests-2--decision-tree-classification.svg')
 plt.close()
 # The decision tree classifier has resulted in overfitting, for example,
 # in the skinny purple region between the yellow and blue regions.
@@ -78,7 +78,7 @@ bag = BaggingClassifier(tree, n_estimators=100, max_samples=0.8, random_state=1)
 bag.fit(X, y)
 # Plot decision boundaries for an ensemble of random decision trees
 visualize_classifier(bag, X, y)
-plt.savefig('../scikit-learn-examples-figures/decision-trees-and-random-forest-3--bagging-classification.svg')
+plt.savefig('../scikit-learn-examples-figures/decision-trees-and-random-forests-3--bagging-classification.svg')
 plt.close()
 
 # random forests within the context of classification
@@ -86,7 +86,7 @@ plt.close()
 model = RandomForestClassifier(n_estimators=100, random_state=0)
 visualize_classifier(model, X, y)
 # Plot decision boundaries for a random forest, which is an optimized ensemble of decision trees
-plt.savefig('../scikit-learn-examples-figures/decision-trees-and-random-forest-4--random-forest-classification.svg')
+plt.savefig('../scikit-learn-examples-figures/decision-trees-and-random-forests-4--random-forest-classification.svg')
 plt.close()
 
 # # # random forest regression
@@ -106,7 +106,7 @@ def model(x, sigma=0.3):
 
 y = model(x)
 plt.errorbar(x, y, 0.3, fmt='o')
-plt.savefig('../scikit-learn-examples-figures/decision-trees-and-random-forest-5--fast-and-slow-oscillation-with-noise.svg')
+plt.savefig('../scikit-learn-examples-figures/decision-trees-and-random-forests-5--fast-and-slow-oscillation-with-noise.svg')
 plt.close()
 
 
@@ -118,7 +118,7 @@ y_true_noiseless = model(x_fit, sigma=0)
 plt.errorbar(x, y, 0.3, fmt='o', alpha=0.3)
 plt.plot(x_fit, y_fit, '-r')
 plt.plot(x_fit, y_true_noiseless, '-k', alpha=0.5)
-plt.savefig('../scikit-learn-examples-figures/decision-trees-and-random-forest-6--random-forest-regression.svg')
+plt.savefig('../scikit-learn-examples-figures/decision-trees-and-random-forests-6--random-forest-regression.svg')
 plt.close()
 
 # The multiple trees allow for a probabilistic classification:
