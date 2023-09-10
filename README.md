@@ -147,8 +147,11 @@ https://scikit-learn.org/stable/modules/grid_search.html
 ## Manifold learning in Scikit-Learn
 https://scikit-learn.org/stable/modules/manifold.html
 
-## Selecting the number of clusters with silhouette analysis on KMeans clustering in Scikit-Learn
+## Selecting the number of clusters with silhouette analysis on K-Means clustering in Scikit-Learn
 https://scikit-learn.org/stable/auto_examples/cluster/plot_kmeans_silhouette_analysis.html
+
+## Color Quantization using K-Means in Scikit-Learn
+https://scikit-learn.org/stable/auto_examples/cluster/plot_color_quantization.html
 
 ## Scikit-Image
 https://scikit-image.org/
