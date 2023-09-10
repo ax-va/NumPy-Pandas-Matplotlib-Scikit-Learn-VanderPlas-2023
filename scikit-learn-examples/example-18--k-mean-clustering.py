@@ -138,3 +138,4 @@ plt.close()
 
 # 4) k-means can be slow for large numbers of samples
 # -> batch-based k-means algorithms -> sklearn.cluster.MiniBatchKMeans.
+# An example with MiniBatchKMeans is given in the exercise "k-means for color compression".
