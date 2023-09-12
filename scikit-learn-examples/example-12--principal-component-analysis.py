@@ -22,7 +22,7 @@ plt.close()
 # Goal: learn about the relationship between the x and y values, i.e.
 # find pricipal axes in the data and the data using those axes.
 
-pca = PCA(n_components=2)
+pca = PCA(n_components=2)  # number of components or percent of preserved variance in the projected data
 pca.fit(X)
 pca.components_
 # array([[-0.94446029, -0.32862557],
