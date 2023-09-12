@@ -27,7 +27,7 @@ def plot_digits(data):
 
 
 plot_digits(digits.data)
-plt.savefig('../scikit-learn-examples-figures/gmms-for-generating-new-handwritten-digits-1--data.svg')
+plt.savefig('../scikit-learn-examples-figures/gmms-for-generating-new-handwritten-digits-1--data.png')
 plt.close()
 
 # Use PCA and preserve 99% of the variance in the projected data
@@ -60,5 +60,5 @@ data_new.shape
 # Use the inverse transform of the PCA object to construct the new digits
 digits_new = pca.inverse_transform(data_new)
 plot_digits(digits_new)
-plt.savefig('../scikit-learn-examples-figures/gmms-for-generating-new-handwritten-digits-3--new-generated-data.svg')
+plt.savefig('../scikit-learn-examples-figures/gmms-for-generating-new-handwritten-digits-3--new-generated-data.png')
 plt.close()
