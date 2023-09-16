@@ -9,6 +9,8 @@ from sklearn.model_selection import GridSearchCV
 from sklearn.naive_bayes import GaussianNB
 from sklearn.model_selection import cross_val_score
 
+plt.style.use('seaborn-v0_8-whitegrid')
+
 
 class BayesianKDEClassifier(ClassifierMixin, BaseEstimator):
     """
