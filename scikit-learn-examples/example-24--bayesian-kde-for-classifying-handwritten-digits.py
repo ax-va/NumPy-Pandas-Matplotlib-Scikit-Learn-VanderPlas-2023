@@ -92,8 +92,10 @@ grid.fit(digits.data, digits.target)
 
 # Plot the cross-validation score as a function of bandwidth
 fig, ax = plt.subplots()
-ax.semilogx(np.array(grid.cv_results_['param_bandwidth']),
-grid.cv_results_['mean_test_score'])
+ax.semilogx(
+    np.array(grid.cv_results_['param_bandwidth']),
+    grid.cv_results_['mean_test_score']
+)
 ax.set(title='KDE Model Performance', ylim=(0, 1), xlabel='bandwidth', ylabel='accuracy')
 plt.savefig('../scikit-learn-examples-figures/bayesian-kde-for-classifying-handwritten-digits--cross-validation-for-bandwidth.svg')
 plt.close()
