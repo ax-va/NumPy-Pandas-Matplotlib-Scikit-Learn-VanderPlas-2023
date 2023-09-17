@@ -7,20 +7,20 @@ You need Python 3.11+ and the following packages or later: numpy 1.25.2, pandas 
 ## Original code by Jake VanderPlas
 https://github.com/jakevdp/PythonDataScienceHandbook
 
-## Use %timeit command in IPython:
+## Use %timeit command in IPython
 ```ipython
 from my_module import my_func
 %timeit my_func(1, 2)
 # 45.7 µs ± 1.67 µs per loop (mean ± std. dev. of 7 runs, 10,000 loops each)
 ```
 
-## Get attributes, methods, and functions in IPython:
+## Get attributes, methods, and functions in IPython
 ```ipython
 import my_module
 my_module.<TAB>
 ```
 
-## Get the source code in IPython:
+## Get the source code in IPython
 ```ipython
 from my_module import my_func
 my_func??
@@ -38,7 +38,7 @@ my_func??
 # Type:      function
 ```
 
-## Get the description in IPython:
+## Get the description in IPython
 ```ipython
 my_func?
 # Signature: my_func(x, y)
@@ -47,12 +47,12 @@ my_func?
 # Type:      function
 ```
 
-## Install line_profiler:
+## Install line_profiler
 ```
 pip install line_profiler
 ```
 
-## Use line_profiler in IPython:
+## Use line_profiler in IPython
 ```ipython
 from my_module import my_func
 %load_ext line_profiler
@@ -69,12 +69,12 @@ from my_module import my_func
 #     13         1       2375.0   2375.0      0.0      return x + y
 ```
 
-## Install memory_profiler:
+## Install memory_profiler
 ```
 pip install memory_profiler
 ```
 
-## Use memory_profiler in IPython:
+## Use memory_profiler in IPython
 ```ipython
 from my_module import my_func
 %load_ext memory_profiler
@@ -94,16 +94,16 @@ peak memory: 74.48 MiB, increment: 0.00 MiB
 #     13     82.1 MiB      0.0 MiB           1       return x + y
 ```
 
-## IPython documentation:
+## IPython documentation
 https://ipython.readthedocs.io/en/st
 
-## NumPy website:
+## NumPy website
 https://numpy.org/
 
-## Pandas website:
+## Pandas website
 https://pandas.pydata.org/
 
-## Time series in Pandas:
+## Time series in Pandas
 https://pandas.pydata.org/pandas-docs/stable/user_guide/timeseries.html
 
 ## Effective Pandas
@@ -112,7 +112,7 @@ https://leanpub.com/effective-pandas
 ## PyVideo (NumPy, Pandas, Scikit-Learn, Matplotlib, Plotly, etc)
 https://pyvideo.org/search?q=pandas
 
-## Xarray website: 
+## Xarray website
 Pandas-style N-dimensional arrays https://xarray.pydata.org/
 
 ## Matplotlib website
