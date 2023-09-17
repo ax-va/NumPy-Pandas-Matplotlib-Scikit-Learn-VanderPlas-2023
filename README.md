@@ -104,7 +104,7 @@ https://pandas.pydata.org/pandas-docs/stable/user_guide/timeseries.html
 ## Effective Pandas
 https://leanpub.com/effective-pandas
 
-## PyVideo (NumPy, Pandas, scikit-learn, Matplotlib, Plotly, etc)
+## PyVideo (NumPy, Pandas, Scikit-Learn, Matplotlib, Plotly, etc)
 https://pyvideo.org/search?q=pandas
 
 ## Xarray website: 
