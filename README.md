@@ -1,6 +1,6 @@
 # NumPy-Pandas-Matplotlib-Scikit-Learn-VanderPlas-2023
 
-The examples provide an introduction to Data Science and classic Machine Learning using NumPy, Pandas, Matplotlib, and Scikit-Learn. They are taken, with some changes, from the book "Python Data Science Handbook: Essential Tools for Working with Data", Second Edition, written by Jake VanderPlas and published by O'Reilly in 2023. Some datasets are also taken from the Jake VanderPlas' GitHub repositories https://github.com/jakevdp. 
+These examples provide an introduction to Data Science and classic Machine Learning using NumPy, Pandas, Matplotlib, and Scikit-Learn. They are taken, with some changes, from the book "Python Data Science Handbook: Essential Tools for Working with Data", Second Edition, written by Jake VanderPlas and published by O'Reilly in 2023. Some datasets are also taken from the Jake VanderPlas' GitHub repositories https://github.com/jakevdp. 
 
 You need Python 3.11+ and the following packages or later: numpy 1.25.2, pandas 2.1.0, matplotlib 3.8.0, seaborn 0.12.2, scikit-learn 1.3.0, scikit-image 0.21.0, (optionally) ipython 8.15.0.
 
