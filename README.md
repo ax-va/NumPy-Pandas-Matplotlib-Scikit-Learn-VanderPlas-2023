@@ -1,4 +1,4 @@
-# NumPy-Pandas-Matplotlib-Scikit-Learn-VanderPlas-2023
+# NumPy-Pandas-Matplotlib-Scikit-learn-VanderPlas-2023
 
 These examples provide an introduction to Data Science and classic Machine Learning using NumPy, Pandas, Matplotlib, and Scikit-learn. They are taken, with some changes, from the book "Python Data Science Handbook: Essential Tools for Working with Data", Second Edition, written by Jake VanderPlas and published by O'Reilly in 2023. Some datasets are also taken from the Jake VanderPlas' GitHub repositories https://github.com/jakevdp. 
 
