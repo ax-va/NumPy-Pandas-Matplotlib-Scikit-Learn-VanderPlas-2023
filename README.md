@@ -171,3 +171,6 @@ https://scikit-learn.org/stable/modules/ensemble.html#forest
 
 ## OpenCV website
 http://opencv.org/
+
+## pandaSDMX
+https://pypi.org/project/pandaSDMX/
