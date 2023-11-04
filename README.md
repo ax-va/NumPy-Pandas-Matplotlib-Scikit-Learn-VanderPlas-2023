@@ -100,6 +100,9 @@ https://ipython.readthedocs.io/en/st
 ## NumPy website
 https://numpy.org/
 
+## The N-dimensional array (ndarray)
+https://numpy.org/doc/stable/reference/arrays.ndarray.html
+
 ## Pandas website
 https://pandas.pydata.org/
 
