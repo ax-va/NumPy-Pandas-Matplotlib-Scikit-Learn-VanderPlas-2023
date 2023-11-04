@@ -103,6 +103,9 @@ https://numpy.org/
 ## The N-dimensional array (ndarray)
 https://numpy.org/doc/stable/reference/arrays.ndarray.html
 
+## Mathematical functions in NumPy
+https://numpy.org/doc/stable/reference/routines.math.html
+
 ## Pandas website
 https://pandas.pydata.org/
 
