@@ -90,6 +90,19 @@ pd.DataFrame({'population': population, 'area': area})
 # New York        20201249  141297
 # Pennsylvania    13002700  119280
 
+# Create from Series using concat
+names = pd.Series(['Albert Camus', 'Richard Ph. Feynman'], name='name')
+categories = pd.Series(['Literature', 'Physics'], name='category')
+pd.concat([names, categories], axis=1)
+#                   name    category
+# 0         Albert Camus  Literature
+# 1  Richard Ph. Feynman     Physics
+
+pd.concat([names, categories], axis="columns")
+#                   name    category
+# 0         Albert Camus  Literature
+# 1  Richard Ph. Feynman     Physics
+
 # Create from a two-dimensional NumPy array:
 pd.DataFrame(np.random.rand(3, 2), columns=['foo', 'bar'], index=['a', 'b', 'c'])
 #         foo       bar
