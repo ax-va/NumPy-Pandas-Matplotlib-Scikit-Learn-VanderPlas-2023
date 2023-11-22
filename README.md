@@ -14,6 +14,12 @@ https://github.com/jakevdp/PythonDataScienceHandbook
 jupyter qtconsole
 ```
 
+## How to run only IPython
+Run in the terminal:
+```console
+ipython
+```
+
 ## Use %timeit command in IPython
 ```ipython
 from my_module import my_func
