@@ -7,6 +7,13 @@ You need Python 3.11+ and the following packages or later: numpy 1.25.2, pandas 
 ## Original code in Jupyter notebooks by Jake VanderPlas
 https://github.com/jakevdp/PythonDataScienceHandbook
 
+## How to work with Qt Console:
+1) Install PySide6 and qtconsole
+2) Run in the terminal:
+```console
+jupyter qtconsole
+```
+
 ## Use %timeit command in IPython
 ```ipython
 from my_module import my_func
