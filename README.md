@@ -14,7 +14,7 @@ https://github.com/jakevdp/PythonDataScienceHandbook
 jupyter qtconsole
 ```
 
-## How to run only IPython
+## How to run IPython
 Run in the terminal:
 ```console
 ipython
