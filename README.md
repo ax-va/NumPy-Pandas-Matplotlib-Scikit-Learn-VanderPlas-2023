@@ -193,3 +193,8 @@ http://opencv.org/
 
 ## pandaSDMX
 https://pypi.org/project/pandaSDMX/
+
+## Synthetic Data Vault
+https://pypi.org/project/sdv/
+
+The Synthetic Data Vault (SDV) is a Python library designed to be your one-stop shop for creating tabular synthetic data. The SDV uses a variety of machine learning algorithms to learn patterns from your real data and emulate them in synthetic data.
