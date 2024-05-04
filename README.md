@@ -7,6 +7,7 @@ The content is divided in four separate parts:
 2. pandas
 3. matplotlib
 4. scikit-learn
+
 examples together with their datasets and figures.
 
 You need Python 3.11+ and the following packages or later: numpy 1.25.2, pandas 2.1.0, matplotlib 3.8.0, seaborn 0.12.2, scikit-learn 1.3.0, scikit-image 0.21.0, (optionally) ipython 8.15.0.
