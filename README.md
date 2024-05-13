@@ -14,7 +14,7 @@ My environment was Python 3.11 with the following packages:
 ```
 numpy==1.25.2
 pandas==2.1.0
-matplotlib 3.8.0
+matplotlib==3.8.0
 seaborn==0.12.2
 scikit-learn==1.3.0
 scikit-image==0.21.0
