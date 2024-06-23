@@ -36,7 +36,7 @@ print("Model intercept:", model.intercept_)
 # close to -5
 
 # multidimensional linear models: fitting a hyperplane to points in higher dimensions
-# y = a_0 + a_1 * x_1 + a_2 + x_2 + ...
+# y = a_0 + a_1 * x_1 + a_2 * x_2 + ...
 
 rng = np.random.RandomState(1)
 X = 10 * rng.rand(100, 3)
