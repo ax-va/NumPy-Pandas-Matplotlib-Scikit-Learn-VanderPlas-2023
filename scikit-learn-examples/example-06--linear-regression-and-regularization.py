@@ -83,7 +83,7 @@ plt.close()
  # # # Gaussian basis functions
 
  # The Gaussian basis functions are not built into Scikit-Learn.
- # Build these bsais functions:
+ # Build the Gaussian basis functions.
 
 
 class GaussianFeatures(BaseEstimator, TransformerMixin):
