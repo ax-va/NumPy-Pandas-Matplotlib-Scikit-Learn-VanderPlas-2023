@@ -10,7 +10,7 @@ The content is divided in four separate parts consisting of
 
 examples, datasets, and figures.
 
-My environment was Python 3.11 with the following packages:
+My environment was Python 3.11 with the following packages and their dependencies (not listed here):
 ```
 numpy==1.25.2
 pandas==2.1.0
