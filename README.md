@@ -27,14 +27,14 @@ https://github.com/jakevdp/PythonDataScienceHandbook
 ## How to run Jupyter QtConsole:
 1) Install PySide6 and qtconsole
 2) Run in the terminal:
-```console
-jupyter qtconsole
+```unix
+$ jupyter qtconsole
 ```
 
 ## How to run IPython
 Run in the terminal:
-```console
-ipython
+```unix
+$ ipython
 ```
 
 ## Use `%timeit` command in IPython
@@ -123,95 +123,3 @@ peak memory: 74.48 MiB, increment: 0.00 MiB
 #     12     82.1 MiB      0.0 MiB        1000           y += 1
 #     13     82.1 MiB      0.0 MiB           1       return x + y
 ```
-
-## IPython documentation
-https://ipython.readthedocs.io/en/st
-
-## NumPy website
-https://numpy.org/
-
-## The N-dimensional array (ndarray)
-https://numpy.org/doc/stable/reference/arrays.ndarray.html
-
-## Mathematical functions in NumPy
-https://numpy.org/doc/stable/reference/routines.math.html
-
-## Pandas website
-https://pandas.pydata.org/
-
-## Time series in Pandas
-https://pandas.pydata.org/pandas-docs/stable/user_guide/timeseries.html
-
-## Effective Pandas
-https://leanpub.com/effective-pandas
-
-## PyVideo (NumPy, Pandas, Scikit-learn, Matplotlib, Plotly, etc)
-https://pyvideo.org/search?q=pandas
-
-## Xarray website
-Pandas-style N-dimensional arrays https://xarray.pydata.org/
-
-## Matplotlib website
-https://matplotlib.org/stable/index.html
-
-## Matplotlib gallery
-https://matplotlib.org/stable/gallery/
-
-## "Ten Simple Rules for Better Figures" by Nicholas Rougier, Michael Droettboom, and Philip Bourne, 2014
-https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1003833
-
-## Choosing colormaps in Matplotlib
-https://matplotlib.org/stable/tutorials/colors/colormaps.html
-
-## Annotations in Matplotlib
-https://matplotlib.org/stable/tutorials/text/annotations.html
-
-## Customizing Matplotlib with style sheets and rcParams
-https://matplotlib.org/stable/tutorials/introductory/customizing.html
-
-## Seaborn website
-http://seaborn.pydata.org/
-
-## Seaborn example gallery
-https://seaborn.pydata.org/examples/index.html
-
-## PyViz: Python tools for data visualization
-https://pyviz.org/
-
-## Linear models in Scikit-learn
-https://scikit-learn.org/stable/modules/linear_model.html
-
-## Cross-validation in Scikit-learn
-https://scikit-learn.org/stable/modules/cross_validation.html
-
-## Grid search in Scikit-learn 
-https://scikit-learn.org/stable/modules/grid_search.html
-
-## Manifold learning in Scikit-learn
-https://scikit-learn.org/stable/modules/manifold.html
-
-## Selecting the number of clusters with silhouette analysis on K-Means clustering in Scikit-learn
-https://scikit-learn.org/stable/auto_examples/cluster/plot_kmeans_silhouette_analysis.html
-
-## Color quantization using K-Means in Scikit-learn
-https://scikit-learn.org/stable/auto_examples/cluster/plot_color_quantization.html
-
-## Density estimation in Scikit-learn
-https://scikit-learn.org/stable/modules/density.html
-
-## Scikit-image
-https://scikit-image.org/
-
-## Forests of randomized trees
-https://scikit-learn.org/stable/modules/ensemble.html#forest
-
-## OpenCV website
-http://opencv.org/
-
-## pandaSDMX
-https://pypi.org/project/pandaSDMX/
-
-## Synthetic Data Vault
-https://pypi.org/project/sdv/
-
-The Synthetic Data Vault (SDV) is a Python library designed to be your one-stop shop for creating tabular synthetic data. The SDV uses a variety of machine learning algorithms to learn patterns from your real data and emulate them in synthetic data.
