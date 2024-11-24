@@ -25,7 +25,7 @@ ipython==8.15.0  # optionally
 https://github.com/jakevdp/PythonDataScienceHandbook
 
 ## How to run Jupyter QtConsole:
-1) Install PySide6 and qtconsole
+1) Install **PySide6** and **qtconsole**
 2) Run in the terminal:
 ```unix
 $ jupyter qtconsole
@@ -44,13 +44,13 @@ from my_module import my_func
 # 45.7 µs ± 1.67 µs per loop (mean ± std. dev. of 7 runs, 10,000 loops each)
 ```
 
-## Get attributes, methods, and functions in `IPython`
+## Get attributes, methods, and functions in IPython
 ```ipython
 import my_module
 my_module.<TAB>
 ```
 
-## Get the source code in `IPython`
+## Get the source code in IPython
 ```ipython
 from my_module import my_func
 my_func??
@@ -64,25 +64,25 @@ my_func??
 #         x += 1
 #         y += 1
 #     return x + y
-# File:      ~/PycharmProjects/NumPy-Pandas-Matplotlib-Scikit-learn-VanderPlas-2023/my_module.py
+# File:      ~<path/to/project>/my_module.py
 # Type:      function
 ```
 
-## Get the description in `IPython`
+## Get the description in IPython
 ```ipython
 my_func?
 # Signature: my_func(x, y)
 # Docstring: It is my function
-# File:      ~/PycharmProjects/NumPy-Pandas-Matplotlib-Scikit-learn-VanderPlas-2023/my_module.py
+# File:      ~<path/to/project>/my_module.py
 # Type:      function
 ```
 
-## Install `line_profiler`
+## Install line_profiler
 ```
 pip install line_profiler
 ```
 
-## Use `line_profiler` in `IPython`
+## Use line_profiler in IPython
 ```ipython
 from my_module import my_func
 %load_ext line_profiler
@@ -99,12 +99,12 @@ from my_module import my_func
 #     13         1       2375.0   2375.0      0.0      return x + y
 ```
 
-## Install `memory_profiler`
+## Install memory_profiler
 ```
 pip install memory_profiler
 ```
 
-## Use `memory_profiler` in `IPython`
+## Use memory_profiler in IPython
 ```ipython
 from my_module import my_func
 %load_ext memory_profiler
